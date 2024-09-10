@@ -1,7 +1,7 @@
 # Learn Laravel From Laracast
 Course Resourse: https://laracasts.com/series/30-days-to-learn-laravel-11
 
-## Create and setup a laravel project
+## 1. Create and setup a laravel project
 
 ### Create laravel project
 ```bash	
@@ -33,7 +33,7 @@ git commit -m 'initial commit'
 git push origin main  
 ```
 		
-## Clone and setup the project to local PC		
+## 2. Clone and setup the project to local PC		
 - clone from github
 - Install composer to the project directory 
 ```
@@ -52,4 +52,14 @@ php artisan key:generate
 ```
 php artisan serve
 ```
- 
+
+## 3.  Run the project at local 
+- Simply run at port 8000
+```bash
+php artisan serve
+```
+- Run on different port (e.g. 8080)
+```bash
+php artisan serve --port=8080
+```
+- Press `Cltr + C` to stop the server
