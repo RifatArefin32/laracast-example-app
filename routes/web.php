@@ -16,7 +16,7 @@ use App\Models\Job;
 */
 
 Route::get('/', function() {
-    return view('home');
+    return view('home' );
 });
 
 Route::get('/jobs', function() {
@@ -25,12 +25,9 @@ Route::get('/jobs', function() {
     ]);
 });
 
-Route::get('/job/{id}', function($id) {  
+Route::get('/job/{id}', function($id) {
     $job = Job::find($id);
-    
-    return view('job-details', [
-        'job' => $job
-    ]);
+    return view('job-details', ['job' => $job]);
 });
 
 Route::get('/about', function() {
